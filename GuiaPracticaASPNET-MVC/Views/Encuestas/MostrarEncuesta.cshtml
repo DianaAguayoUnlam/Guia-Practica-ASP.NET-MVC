@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MostrarEncuesta</title>
+</head>
+<body>
+    <div>
+        <h3>Resultados de la encuesta</h3>
+        <p>Nombre: @ViewBag.nombre</p>
+        <p>Descripcion: @ViewBag.descripcion</p>
+        <p>Esta de acuerdo: @ViewBag.check</p>
+    </div>
+    <div>
+        <a href="/Home/Index">
+            <input type="button" name="name" value="Ir al inicio" />
+        </a>
+    </div>
+
+</body>
+</html>

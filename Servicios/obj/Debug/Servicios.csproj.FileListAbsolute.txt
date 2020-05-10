@@ -1,0 +1,9 @@
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\bin\Debug\Servicios.dll
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\bin\Debug\Servicios.pdb
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\bin\Debug\Entidades.dll
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\bin\Debug\Entidades.pdb
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\obj\Debug\Servicios.dll
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Servicios\obj\Debug\Servicios.pdb

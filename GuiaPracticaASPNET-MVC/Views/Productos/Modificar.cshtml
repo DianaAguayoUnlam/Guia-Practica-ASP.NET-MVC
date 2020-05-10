@@ -1,0 +1,77 @@
+﻿@model GuiaPracticaASPNET_MVC.Models.ProductoVM
+    
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Modificar</title>
+</head>
+<body>
+    <div>
+        <h3>Modificar Producto</h3>
+
+        <h5>@ViewBag.error</h5>
+
+        <form action="/Productos/Modificar" method="post">
+            <div>
+                <label>
+                    Id:
+                </label>
+                <input type="number" name="id" value="@Model.Producto.id" readonly />
+
+                <label>
+                    Nombre:
+                </label>
+                <input type="text" name="nombre" value="@Model.Producto.nombre" />
+            </div>
+            <div>
+                <label>
+                    Cantidad:
+                </label>
+                <input type="number" name="cantidad" value="@Model.Producto.cantidad" />
+            </div>
+
+            <div>
+                <label>
+                    Precio:
+                </label>
+                <input type="text" min="0" name="precio" value="@Model.Producto.precio" step="0.01" />
+            </div>
+            <div>
+                <label>
+                    Fecha alta:
+                </label>
+                <input type="datetime-local" name="fechaAlta" value="@Model.Producto.fechaAlta" />
+            </div>
+
+            <div>
+                <label>
+                    Tipo:
+                </label>
+                <select name = "idTipo">
+                    @foreach (var item in Model.Tipos)
+                    {
+                        <option value="@item.IdTipo">@item.tipo</option>
+                    }
+                    
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" name="name" value="Guardar" />
+            </div>
+        </form>
+        <div>
+            <a href="/Productos/Crear">
+                <input type="button" name="name" value="Nuevo" />
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>

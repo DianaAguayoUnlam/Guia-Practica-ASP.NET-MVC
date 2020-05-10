@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <ul>
+
+            2.
+            a.	Crear un controller llamado calculadora (recordar la convención de MVC).
+
+            <br>
+            b.	Agregar una vista con un form con los siguientes campos:
+
+            <li>
+                i.	Input con id “Operador1”
+            </li>
+            <li>
+                ii.	Input con id “Operador2”
+            </li>
+            <li>
+                iii.	Input type=submit
+            </li>
+            <li>
+                iv.	Control HTML p con id “Resultado”
+            </li>
+            <li>
+                v.	Agregar un action a donde será recepcionado el submit del formulario para mostrar el mensaje en el control HTML p con id “Resultado”.
+            </li>
+        </ul>
+
+        <form action="/Calculadora/Operar" method="post">
+            <input id="Operador1" type="text" name="operando1" value="" />
+            <input id="Operador2" type="text" name="operando2" value="" />
+
+            <select name="operador">
+                <option value=1 name="operador">Suma</option>
+                <option value=2 name="operador">Resta</option>
+                <option value=3 name="operador">Multiplicacion</option>
+                <option value=4 name="operador">Division</option>
+            </select>
+            <input type="submit" name="name" value="Enviar" />
+
+
+        </form>
+        <asp:p id="Resultado">Resultado = @ViewBag.resultado</asp:p>
+
+
+    </div>
+</body>
+</html>

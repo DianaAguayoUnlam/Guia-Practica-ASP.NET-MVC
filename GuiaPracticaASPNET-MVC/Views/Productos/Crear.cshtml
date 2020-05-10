@@ -1,0 +1,77 @@
+﻿@model GuiaPracticaASPNET_MVC.Models.ProductoVM
+@{
+   // Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Crear</title>
+</head>
+<body>
+    <div>
+        <h3>Crear Producto</h3>
+        <h5>@ViewBag.error</h5>
+
+
+    <form action="/Productos/Crear" method="post">
+        <div>
+            <label>
+                Id:
+            </label>
+            <input type="number" name="id" value="" />
+
+            <label>
+                Nombre:
+            </label>
+            <input type="text" name="nombre" value="" />
+        </div>
+
+        <div>
+            <label>
+                Cantidad:
+            </label>
+            <input type="number" name="cantidad" value="" />
+        </div>
+
+        <div>
+            <label>
+                Precio:
+            </label>
+            <input type="text" min="0" name="precio" value="" step="0.01" />
+        </div>
+        <div>
+            <label>
+                Fecha alta:
+            </label>
+            <input type="datetime-local" name="fechaAlta" value="" />
+        </div>
+
+        <div>
+            <label>
+                Tipo:
+            </label>
+            <select name="IdTipo">
+                @foreach (var tipo in @Model.Tipos)
+                {
+                    <option value="@tipo.IdTipo">@tipo.tipo</option>
+                }
+
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" name="name" value="Crear" />
+        </div>
+    </form>
+        <div>
+            <a href="/Productos/Listar">
+                <input type="button" name="name" value="Listar" />
+            </a>
+
+        </div>
+    </div>
+</body>
+</html>

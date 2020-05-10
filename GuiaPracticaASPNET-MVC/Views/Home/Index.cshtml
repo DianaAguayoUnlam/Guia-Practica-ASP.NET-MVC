@@ -1,0 +1,104 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="Container">
+        <h1>Guía Práctica : ASP.NET MVC</h1>
+        <div>
+            <p>
+                1.	Crear un proyecto de tipo Aplicación ASP.NET  MVC y crear un formulario Web.
+                En este formulario agregar una html input y un botón de type=submit.
+                En el action retornar un mensaje de éxito que debe ser mostrado en un control HTML p dentro de la misma
+                vista.
+            </p>
+            <a href="/Home/Mensaje">/Home/Mensaje</a>
+        </div>
+
+        <div>
+            <p>
+                2.	Crear un proyecto de tipo Aplicación ASP.NET MVC.<br />
+                a.	Crear un controller llamado calculadora (recordar la convención de MVC).<br />
+                b.	Agregar una vista con un form con los siguientes campos:<br />
+                i.	Input con id “Operador1”<br />
+                ii.	Input con id “Operador2”<br />
+                iii.	Input type=submit<br />
+                iv.	Control HTML  p con id “Resultado”<br />
+                v.	Agregar un action a donde será recepcionado el submit del formulario para mostrar el mensaje en el control HTML p con id “Resultado”.
+
+            </p>
+            <a href="/Calculadora/Index">/Calculadora/Index</a>
+        </div>
+
+
+        <div>
+            <p>
+                3.	Crear un vista para registrar el alta de una nueva encuesta.<br />
+                La vista debe tener 2 inputs de tipo text (nombre y descripción) y 1 input de tipo check (campo “estoy de acuerdo”).<br />
+                Luego de crear la vista, crear un action de tipo Post en un controller de nombre EncuestasController que reciba un FormCollection.<br />
+                Acceder a la información de cada input y, luego, enviarla por querystring a un action MostrarEncuesta (dentro del mismo controller)<br />
+                que mostrará los datos ingresados en una nueva vista (el diseño de la vista queda a decisión del alumno).
+            </p>
+            <a href="/Encuestas/Alta">/Ecuestas/Alta</a>
+        </div>
+
+
+
+        <div>
+            <p>
+                4.	Realizar el ejercicio anterior pero utilizando una clase Encuesta en lugar del FormCollection.<br />
+                ¿Qué diferencias hay? ¿Qué tienen en común ambos tipos de bindings?<br />
+                Rta: La diferencia entre el uso del formCollection y la clase Encuesta es que<br />
+                con la primera se hace un mapeo de los campos de forma manual<br />
+                y con la segunda se mapean directamente name con propiedades de la clase, por lo que es mas comodo su uso<br />
+            </p>
+            <label>1° Comentar/Descomentar form action en views/Ecuestas/Alta</label>
+            <a href="/Encuestas/Alta"> /Ecuestas/Alta </a>
+
+
+        </div>
+
+        <div>
+            <p>
+                5.	Crear un controller con el nombre ProductosController, crear las siguientes actions y views para resolver los siguientes puntos:<br />
+                a.	Vista para Crear un producto.<br />
+                b.	Vista para Modificar un producto.<br />
+                c.	Vista para Listar todos los productos almacenados.<br />
+                d.	Vista para Eliminar un producto existente.<br />
+
+                Comentarios:<br />
+                a.	Se debe utilizar una clase de nombre Producto con los siguientes atributos: id (int), nombre (string), cantidad (int), precio(decimal), fecha alta (dateTime).<br />
+                b.	Todos los datos indicados en el punto anterior, deben poder ser cargados por el usuario. Así como todos deben visualizarse en la vista que lista.<br />
+                c.	Para almacenar los productos que se van creando debe utilizarse una lista estáticas de tipo List<T>
+                    <br />
+                    (esto será visto en clase con un ejemplo). Utilizar los métodos de Add, Remove para dar de alta, modificar o eliminar un producto).<br />
+                    d.	No se debe utilizar FormCollection sino que se deben utilizar binding a través de clases.<br />
+            </p>
+            <a href="/Productos/Crear">Crear Producto</a>
+        </div>
+        <div>
+            <p>
+
+                6.	Modificar el ejercicio del punto 5) para utilizar un ViewModel.<br />   
+                El ViewModel contendrá el producto creado/modificado junto a una colección de tipos de productos.<br />
+                Los posibles tipos de productos son: Librería, Hogar, Tecnología y Deportes.<br />
+                Al momento de crear y modificar un producto el usuario debe elegir el tipo de producto asociado <br />
+                (Agregar un atributo a la clase Producto para el Tipo de Producto seleccionado).<br />
+                En la pantalla de Listar sólo mostrar el ID de tipo de Producto.
+            </p>
+            <a href="/Productos/Crear">Crear Producto</a>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

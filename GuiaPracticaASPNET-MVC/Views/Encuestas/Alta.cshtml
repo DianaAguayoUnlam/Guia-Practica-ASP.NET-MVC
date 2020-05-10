@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alta</title>
+</head>
+<body>
+    <div>
+        <h3>Encuesta</h3>
+        @*<form action="/Encuestas/Alta" method="post">*@
+        <form action="/Encuestas/AltaConClaseEncuesta" method="post">
+            Nombre: <input type="text" name="Nombre" value="" />
+            Descripcion: <input type="text" name="Descripcion" value="" />
+            Estoy de acuerdo <input type="checkbox" name="check" value="si" />
+
+            <input type="submit" name="name" value="Enviar" />
+        </form>
+    </div>
+    <div>
+        <a href="/Home/Index">
+            <input type="button" name="name" value="Ir al inicio" />
+        </a>
+    </div>
+</body>
+</html>

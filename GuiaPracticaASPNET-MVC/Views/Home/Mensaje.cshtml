@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MostrarMensaje</title>
+</head>
+<body>
+    <div>
+        <form action="/Home/MostrarMensaje" method="post">
+            <input type="text" name="mensaje" value="" />
+            <input type="submit" name="name" value="Enviar" />
+        </form>
+        <asp:p ID="Resultado" runat="server">@ViewBag.mensaje </asp:p>
+    </div>
+    <div>
+        <a href="/Home/Index">
+            <input type="button" name="name" value="Ir al Inicio" />
+        </a>
+    </div>
+       
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@model Entidades.Encuesta
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MostrarEncuestaConClase</title>
+</head>
+<body>
+    <div>
+        <h3>Encuesta con clase</h3>
+        <p>Nombre: @Model.Nombre</p>
+        <p>Descripcion: @Model.Descripcion</p>
+        <p>Esta de acuerdo: @Model.check</p>
+    </div>
+</body>
+</html>

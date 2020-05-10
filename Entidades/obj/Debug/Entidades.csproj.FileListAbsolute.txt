@@ -1,0 +1,6 @@
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\bin\Debug\Entidades.dll
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\bin\Debug\Entidades.pdb
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\obj\Debug\Entidades.dll
+D:\DIANA\proyectosNET\GuiaPracticaASP-NET-MVC\Entidades\obj\Debug\Entidades.pdb
